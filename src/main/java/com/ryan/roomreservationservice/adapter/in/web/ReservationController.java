@@ -48,7 +48,7 @@ public class ReservationController {
     @Operation(summary = "객실 예약 확인하기", description = "회원이 현재 예약한 객실을 확인합니다.")
     public SuccessResponse<ReservationDto.ConfirmAccommodationReservationByMemberResponseDto> confirmAccommodationReservationByMember(
             @AuthenticationPrincipal User user,
-            @Valid ReservationDto.ConfirmAccommodationReservationByMemberRequestDto request
+            @ModelAttribute @Valid ReservationDto.ConfirmAccommodationReservationByMemberRequestDto request
     ) {
         var userId = user.getUsername();
         var command = this.mapper.mapToConfirmAccommodationReservationByMemberCommand(userId, request.getRoomName(), request.getStart(), request.getEnd());
