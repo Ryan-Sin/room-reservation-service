@@ -35,11 +35,11 @@
 
 ### 해결책: Hexagonal Architecture 도입
 
-2주간 고민한 끝에, 기존의 **레이어드 아키텍처 (Layered Architecture)**가 아닌  
-**핵사고날 아키텍처 (Hexagonal Architecture)**를 도입했습니다.  
+2주간 고민한 끝에, 기존의 **레이어드 아키텍처 (Layered Architecture)** 가 아닌  
+**핵사고날 아키텍처 (Hexagonal Architecture)** 를 도입했습니다.  
 이를 통해 **도메인과 영속성 계층을 분리**하고, 애플리케이션 레벨에서 두 계층을 연결했습니다.
 
-또한, **완전 매핑 방식 (Full Mapping Strategy)**을 선택해 **의존성을 완전히 분리**함으로써  
+또한, **완전 매핑 방식 (Full Mapping Strategy)** 을 선택해 **의존성을 완전히 분리**함으로써  
 확장성과 안정성을 확보했습니다.
 
 ---
